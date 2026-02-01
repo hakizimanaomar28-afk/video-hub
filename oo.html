@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Hub</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #020617;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .video-card {
+            background: #020617;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        video {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .video-info {
+            padding: 15px;
+        }
+
+        .video-info h3 {
+            margin: 0 0 8px;
+            font-size: 18px;
+        }
+
+        .video-info p {
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #020617;
+            font-size: 14px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    🎬 Movie Hub
+</header>
+<section class="motivation-section">
+<div class="container">
+
+    <!-- Video 1 -->
+    <div class="video-card">
+        <video controls height="200" width="200">
+            <source src="Avatar 2 Way Of Water A.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+        <div class="video-info">
+            <h3>Avatar 2 Way Of Water A</h3>
+            <p>gaheza</p>
+        </div>
+        <div class="video-actions">
+        <a href="videos/motivation1.mp4" download class="download-btn">
+            ⬇ Download Video
+        </a>
+    </div>
+    </div>
+    <div class="video-card">
+        <video controls height="100" width="300">
+            <source src="Avatar The Way Of Water B.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+        <div class="video-info">
+            <h3>Avatar 2 Way Of Water B</h3>
+            <p>gaheza</p>
+        </div>
+        <div class="video-actions">
+        <a href="videos/motivation1.mp4" download class="download-btn">
+            ⬇ Download Video
+        </a>
+    </div>
+    </div>
+</section>
+    <!-- Video 2 -->
+    <div class="video-card">
+        <video controls>
+            <source src="videos/video2.mp4" type="video/mp4">
+        </video>
+        <div class="video-info">
+            <h3>Nature Clip</h3>
+            <p>Relaxing natural scenery.</p>
+        </div>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video-card">
+        <video controls>
+            <source src="videos/video3.mp4" type="video/mp4">
+        </video>
+        <div class="video-info">
+            <h3>Tech Tutorial</h3>
+            <p>Learn web development basics.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Video Hub — All Rights Reserved
+</footer>
+<div class="register-box">
+    <h2>Create Account</h2>
+
+    <form action="register.php" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="email" name="email" placeholder="Email address" required>
+        <input type="password" name="password" placeholder="Password" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <div class="login-link">
+        Already have an account?
+        <a href="login.html">Login</a>
+    </div>
+</div>
+</body>
+</html>
